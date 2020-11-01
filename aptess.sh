@@ -21,7 +21,7 @@ echo "2) GCC 9.2.0 toolchain from arter97"
 echo
 echo "${bldblu}-Clang Google-${txtrst}"
 echo
-echo "3) Clang 9.0.8 with GCC 4.9.0 both from Google"
+echo "3) Clang 11.0.2 with GCC 4.9.0 both from Google"
 echo
 echo "*) Any other key to Exit"
 echo
@@ -68,14 +68,14 @@ case "$x" in
 
 	3 ) export CROSS_COMPILE="${DIR_TOOLCHAIN}/google_gcc/aarch64-linux-android-4.9";
 	    export CROSS_COMPILE_ARM32="${DIR_TOOLCHAIN}/google_gcc/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-";
-        export KERNEL_CLANG_PATH="${DIR_TOOLCHAIN}/google_clang/clang-r365631c-9.0.8";
+        export KERNEL_CLANG_PATH="${DIR_TOOLCHAIN}/google_clang/clang-r383902b-11.0.2";
         export TARGET_CLANG_TRIPLE="aarch64-linux-gnu-"
         export TARGET_CROSS_COMPILE="aarch64-linux-android-"
         export PATH=${ORIGINAL_PATH}
         export PATH="${KERNEL_CLANG_PATH}/bin:${CROSS_COMPILE}/bin:${PATH}"
         export TARGET_CC="clang";
         ToolchainName="Clang"; 
-        ToolchainCompile="Clang Google 9.0.8";;
+        ToolchainCompile="Clang Google 11.0.2";;
 
 	* ) ;;
 

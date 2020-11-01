@@ -16,7 +16,7 @@ Current toolchains:
 
 [2] **arm-linux-9.2.0**: GCC arter97 9.2.0 toolchain
 
-[3] **aarch64-linux-9.0.8**: Clang Google 9.0.8 toolchain
+[3] **aarch64-linux-11.0.2**: Clang Google 11.0.2 toolchain
 
 [3] **aarch64-linux-4.9.0**: GCC Google 4.9.0 toolchain
 
